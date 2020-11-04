@@ -1,23 +1,18 @@
 ---
 layout: default
-id: competition
-
-title: Competition
-long-title: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur beatae tempora, voluptates ut recusandae ea exercitationem culpa mollitia quia similique. Perferendis cumque obcaecati ad pariatur. Quos iure sapiente amet beatae, officiis possimus minima expedita, ea ad. Doloribus et perspiciatis doloremque. Tenetur consequatur quam maiores odit, adipisci nostrum numquam quo mollitia eligendi! Debitis, culpa impedit, ex esse fugit enim quibusdam!
-enter-cta: Enter Now
+id: overview
 
 competition-form:
   id: comp
   post-url: https://getform.io/f/bd27df03-c05f-4f19-a9b6-60cba0ce1b39
-  expiry-date: 2050-01-01
+  expiry-date: 2021-04-01
   fields:
     - id: email
       type: email
       label: Email
       required: true
   submit: Claim voucher
-  terms: "*The credit will be added to your account within 5 working days. A minimum spend of £125 applies"
+  terms: "*The credit will be added to your account within 5 working days. A&nbsp;minimum spend of £125 applies"
 ---
 
 <div class="vpad--xl">
@@ -31,12 +26,12 @@ competition-form:
   <div class="container">
     <div id="entry-form" class="vpad--md">
       <div class="bg--white boxpad--lg width width--md">
-      <p class="p--xl">Please submit your registered Secret Escapes email address to claim your £25 Secret Escapes credit*.</p>
-      <div class="space--md"></div>
       {% assign form = page.competition-form %}
       <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
         {% include form/messages.html %}
         <div class="form__content width width--md">
+          <p class="p--xl">Please submit your registered Secret Escapes email address to claim your £25 Secret Escapes credit*.</p>
+          <div class="space--md"></div>
           {% for item in form.fields %}
             <div class="form__input js-form-input">
               {% case item.type %}

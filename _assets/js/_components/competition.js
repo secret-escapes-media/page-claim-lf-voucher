@@ -10,8 +10,8 @@ var competitionForm = (function functionName() { // IIFE to control scope of for
     statusMessages: [
       {
         'id': 'expired',
-        'title': 'Competition closed',
-        'description' : 'This competition is not running and we are no longer accepting new entries.'
+        'title': 'This promotion has ended',
+        'description' : 'The Light & Free competition has finished and this voucher is not available to claim.'
       }
     ],
   };
