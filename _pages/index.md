@@ -4,7 +4,7 @@ id: overview
 
 competition-form:
   id: comp
-  post-url: https://getform.io/f/bd27df03-c05f-4f19-a9b6-60cba0ce1b39
+  post-url: https://dislack.com/send/60251b037774856edfd74baa
   expiry-date: 2021-04-01
   fields:
     - id: email
